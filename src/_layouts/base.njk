@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or "Avail Wellness - Advanced Hormone Therapy" }}</title>
+    <meta name="description" content="{{ description or 'Bio-identical hormone therapy with comprehensive digital tracking in American Fork, UT. Board-certified provider with cutting-edge patient portal.' }}">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/aurora-theme.css">
+    <link rel="stylesheet" href="/css/components.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ title or 'Avail Wellness - Advanced Hormone Therapy' }}">
+    <meta property="og:description" content="{{ description or 'Bio-identical hormone therapy with digital tracking in American Fork, UT.' }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://availwell.com{{ page.url }}">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": "Avail Wellness",
+      "description": "Bio-identical hormone therapy clinic with comprehensive digital health tracking",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "95 N 490 W",
+        "addressLocality": "American Fork",
+        "addressRegion": "UT",
+        "postalCode": "84003"
+      },
+      "telephone": "(801) 367-1016",
+      "url": "https://availwell.com",
+      "founder": {
+        "@type": "Person",
+        "name": "Brooke Welsh",
+        "jobTitle": "Women's Health Nurse Practitioner",
+        "credential": "WHNP-BC"
+      },
+      "medicalSpecialty": ["Hormone Replacement Therapy", "Bio-identical Hormones", "Testosterone Therapy", "Medical Weight Loss"],
+      "areaServed": ["American Fork", "Lehi", "Saratoga Springs", "Utah County"]
+    }
+    </script>
+</head>
+<body>
+    <!-- Aurora Background -->
+    <div class="aurora-background">
+        <div class="aurora-layer aurora-layer-1"></div>
+        <div class="aurora-layer aurora-layer-2"></div>
+        <div class="aurora-layer aurora-layer-3"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="/images/avail-logo-real.png" alt="Avail Wellness" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-name">Avail Wellness</span>
+                    <span class="logo-tagline">Advanced Hormone Therapy</span>
+                </div>
+            </div>
+            
+            <div class="nav-menu">
+                <a href="/" class="nav-link {% if page.url == '/' %}active{% endif %}">Home</a>
+                
+                <div class="nav-dropdown">
+                    <a href="/services/" class="nav-link">Services</a>
+                    <div class="dropdown-menu">
+                        <a href="/hormone-therapy-utah/" class="dropdown-link">Hormone Therapy</a>
+                        <a href="/testosterone-therapy-american-fork/" class="dropdown-link">Testosterone Optimization</a>
+                        <a href="/weight-loss-clinic-american-fork/" class="dropdown-link">Medical Weight Loss</a>
+                        <a href="/peptide-therapy/" class="dropdown-link">Peptide Therapy</a>
+                        <a href="/thyroid-treatment/" class="dropdown-link">Thyroid Treatment</a>
+                        <a href="/infrared-sauna/" class="dropdown-link">Infrared Sauna</a>
+                    </div>
+                </div>
+                
+                <a href="/patient-portal/" class="nav-link">Patient Portal</a>
+                <a href="/about/" class="nav-link">About</a>
+                <a href="/contact/" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-cta">
+                <a href="/patient-portal/" class="btn btn-ghost">Portal Login</a>
+                <a href="/contact/" class="btn btn-primary aurora-btn">Book Consultation</a>
+            </div>
+            
+            <!-- Mobile menu button -->
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+        {{ content | safe }}
+    </main>
+    
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="/images/avail-logo-real.png" alt="Avail Wellness" class="footer-logo-img">
+                        <div class="footer-brand-text">
+                            <span class="footer-brand-name">Avail Wellness</span>
+                            <span class="footer-brand-tagline">Advanced Hormone Therapy</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Utah County's premier hormone optimization clinic with comprehensive digital health tracking. 
+                        Board-certified care with cutting-edge patient monitoring.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="/hormone-therapy-utah/">Hormone Therapy</a></li>
+                        <li><a href="/testosterone-therapy-american-fork/">Testosterone Optimization</a></li>
+                        <li><a href="/weight-loss-clinic-american-fork/">Medical Weight Loss</a></li>
+                        <li><a href="/peptide-therapy/">Peptide Therapy</a></li>
+                        <li><a href="/thyroid-treatment/">Thyroid Treatment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="/about/">About</a></li>
+                        <li><a href="/patient-portal/">Patient Portal</a></li>
+                        <li><a href="/health-library/">Health Library</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                        <li><a href="/privacy/">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="contact-info">
+                        <p class="contact-item">
+                            <strong>Address:</strong><br>
+                            95 N 490 W<br>
+                            American Fork, UT 84003
+                        </p>
+                        <p class="contact-item">
+                            <strong>Phone:</strong><br>
+                            <a href="tel:8013671016">(801) 367-1016</a>
+                        </p>
+                        <p class="contact-item">
+                            <strong>Email:</strong><br>
+                            <a href="mailto:info@availwell.com">info@availwell.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-legal">
+                        <p>&copy; 2026 Avail Wellness. All rights reserved.</p>
+                        <p class="footer-disclaimer">
+                            Medical services provided by licensed healthcare professionals. 
+                            Results may vary. HIPAA compliant platform.
+                        </p>
+                    </div>
+                    <div class="footer-powered">
+                        <p>Website by <a href="https://gullstack.com" target="_blank" rel="noopener">GullStack</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="/js/aurora-effects.js"></script>
+    <script src="/js/navigation.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

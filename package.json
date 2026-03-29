@@ -1,0 +1,16 @@
+{
+  "name": "avail-wellness-website",
+  "version": "1.0.0",
+  "description": "Avail Wellness - Advanced Hormone Therapy with Aurora Motion Design",
+  "scripts": {
+    "dev": "eleventy --serve --watch",
+    "build": "eleventy",
+    "clean": "rm -rf _site"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-img": "^3.1.1"
+  },
+  "keywords": ["hormone-therapy", "wellness", "11ty", "aurora-design"],
+  "author": "GullStack - Built by Bogey Bot"
+}
